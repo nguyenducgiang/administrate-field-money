@@ -38,6 +38,10 @@ module Administrate
       def separator
         options.fetch(:separator, currency.decimal_mark)
       end
+
+      def subunit_to_unit
+        options.fetch(:subunit_to_unit, 100)
+      end
     end
   end
 end
