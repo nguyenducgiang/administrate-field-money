@@ -42,6 +42,10 @@ module Administrate
       def subunit_to_unit
         options.fetch(:subunit_to_unit, 100)
       end
+
+      def precision
+        options.fetch(:precision, 2)
+      end
     end
   end
 end
